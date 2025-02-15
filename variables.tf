@@ -1,7 +1,7 @@
 variable "ec2_name" {
   description = "Name of EC2"
   type        = string
-  default     = "luke-tf-ec2" 
+  default     = "huang-tf-ec2" 
 }
 
 variable "instance_type" {
@@ -13,11 +13,11 @@ variable "instance_type" {
 variable "key_name" {
   description = "Name of EC2 Key Pair"
   type        = string
-  default     = "luke-vpc-keypair"
+  default     = "huang-vpc-keypair"
 }
 
 variable "sec_group_name" {
   description = "Name of EC2 security group"
   type        = string
-  default     = "luke-tf-sg-allow-ssh-http-https"
+  default     = "huang-tf-sg-allow-ssh-http-https"
 }

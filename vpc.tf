@@ -3,7 +3,7 @@ resource "aws_vpc" "my_vpc" {
   cidr_block = "10.0.0.0/16"
 
   tags = {
-    Name = "luke-tf-vpc"
+    Name = "huang-tf-vpc"
   }
 }
 
@@ -14,7 +14,7 @@ resource "aws_subnet" "my_public_subnet_az1" {
   availability_zone = "us-east-1a"
 
   tags = {
-    Name = "luke-tf-public-subnet-az1"
+    Name = "huang-tf-public-subnet-az1"
   }
 }
 
@@ -25,7 +25,7 @@ resource "aws_subnet" "my_private_subnet_az1" {
   availability_zone = "us-east-1a"
 
   tags = {
-    Name = "luke-tf-private-subnet-az1"
+    Name = "huang-tf-private-subnet-az1"
   }
 }
 
@@ -36,7 +36,7 @@ resource "aws_subnet" "my_public_subnet_az2" {
   availability_zone = "us-east-1b"
 
   tags = {
-    Name = "luke-tf-public-subnet-az2"
+    Name = "huang-tf-public-subnet-az2"
   }
 }
 
@@ -47,7 +47,7 @@ resource "aws_subnet" "my_private_subnet_az2" {
   availability_zone = "us-east-1b"
 
   tags = {
-    Name = "luke-tf-private-subnet-az2"
+    Name = "huang-tf-private-subnet-az2"
   }
 }
 
@@ -56,6 +56,6 @@ resource "aws_internet_gateway" "my_igw" {
   vpc_id = aws_vpc.my_vpc.id
 
   tags = {
-    Name = "luke-tf-igw"
+    Name = "huang-tf-igw"
   }
 }
