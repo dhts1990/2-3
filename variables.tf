@@ -13,7 +13,7 @@ variable "instance_type" {
 variable "key_name" {
   description = "Name of EC2 Key Pair"
   type        = string
-  default     = "huang-vpc-keypair"
+  default     = "huang-keypair-2025"
 }
 
 variable "sec_group_name" {
